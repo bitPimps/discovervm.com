@@ -47,25 +47,25 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">BI Network <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="http://www.barralinstitute.com/" target="_blank">Barral Institute</a></li>
+								<li><a href="https://www.barralinstitute.com/" target="_blank">Barral Institute</a></li>
 								<li><a href="http://www.formation-osteo.com/" target="_blank">BOTO</a></li>
-								<li><a href="http://www.iahe.com/" target="_blank">International Alliance of Healthcare Educators</a></li>
-								<li><a href="http://www.iahp.com/" target="_blank">International Association of Healthcare Practitioners</a></li>
-								<li><a href="http://www.upledger.com/">Upledger Institute International</a></li>
-								<li><a href="http://www.dambrogioinstitute.com/" target="_blank">D'Ambrogio Institute</a></li>
+								<li><a href="https://www.iahe.com/" target="_blank">International Alliance of Healthcare Educators</a></li>
+								<li><a href="https://www.iahp.com/" target="_blank">International Association of Healthcare Practitioners</a></li>
+								<li><a href="https://www.upledger.com/">Upledger Institute International</a></li>
+								<li><a href="https://www.dambrogioinstitute.com/" target="_blank">D'Ambrogio Institute</a></li>
 							</ul>
 						</li>
 					</ul>
-					<form action="http://www.barralinstitute.com/search-results.php" class="navbar-form navbar-right" accept-charset="utf-8" id="searchForm">
+					<form action="https://www.barralinstitute.com/search-results.php" class="navbar-form navbar-right" accept-charset="utf-8" id="searchForm">
 						<input type="hidden" name="cx" value="008033887930820737546:0y0cr3nhd0o">
 						<input type="hidden" name="ie" value="UTF-8">
 						<div class="input-group">
-            	<input type="text" lang="en" id="searchText" name="q" class="gsc-input form-control" title="Search" x-webkit-speech="" x-webkit-grammar="builtin:search" dir="ltr" spellcheck="false" placeholder="Search...">
+							<input type="text" lang="en" id="searchText" name="q" class="gsc-input form-control" title="Search" x-webkit-speech="" x-webkit-grammar="builtin:search" dir="ltr" spellcheck="false" placeholder="Search...">
 							<span class="input-group-btn">
 								<input type="submit" id="sa" name="sa" class="btn btn-success" value="Go!">
 							</span>
 						</div>
-          </form>
+					</form>
 					<script type="text/javascript" src="//www.google.com/jsapi"></script>
 					<script type="text/javascript">
 						google.load('search', '1');
@@ -82,8 +82,4 @@
 				</div><!--/.navbar-collapse -->
 			</div>
 		</nav>
-		<form name="articleDB" method="post" action="http://www.iahe.com/html/support/articles.php" target="_blank">
-			<input type="hidden" name="sites[]" value="barralinstitute.com">
-			<input type="hidden" name="list" value="false">
-		</form>
 <?php } ?>

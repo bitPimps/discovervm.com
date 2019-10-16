@@ -28,7 +28,7 @@
 						<h1>Discover Visceral Manipulation</h1>
 					</div>
 					<div class="col-sm-3">
-						<img src="http://www.barralinstitute.com/img/headers/home.jpg" class="img-responsive hidden-xs pull-right">
+						<img src="https://www.barralinstitute.com/img/headers/home.jpg" class="img-responsive hidden-xs pull-right">
 					</div>
 				</div>
 			</div>
@@ -126,7 +126,7 @@
 						<div class="panel-body">
 							<div class="thumbnail">
 								<a href="http://shop.iahe.com/Welcome/Understanding-the-Messages-of-Your-Body" target="_blank">
-									<img class="img-rounded" src="http://shop.iahe.com/core/media/media.nl?id=299&c=698760&h=880b0ad248ddef096728&resizeid=-2&resizeh=240&resizew=240">
+									<img class="img-rounded" src="https://698760.app.netsuite.com/core/media/media.nl?id=299&c=698760&h=880b0ad248ddef096728">
 								</a>
 								<div class="caption">
 									<h3>Understanding the Messages of Your Body</h3>

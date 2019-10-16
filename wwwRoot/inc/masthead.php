@@ -6,7 +6,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3 logo">
-						<a href="/index.php"><img alt="American CranioSacral Therapy Association" src="http://www.barralinstitute.com/img/logos/bi.jpg" class="img-responsive"></a>
+						<a href="/index.php"><img alt="Discover Visceral Manipulation" src="https://www.barralinstitute.com/img/logos/bi.jpg" class="img-responsive"></a>
 					</div>
 					<div class="col-sm-5 col-sm-offset-4">
 						<h3 class="tagline">
