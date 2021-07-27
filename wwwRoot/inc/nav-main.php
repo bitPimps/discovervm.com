@@ -56,29 +56,20 @@
 							</ul>
 						</li>
 					</ul>
-					<form action="https://www.barralinstitute.com/search-results.php" class="navbar-form navbar-right" accept-charset="utf-8" id="searchForm">
-						<input type="hidden" name="cx" value="008033887930820737546:0y0cr3nhd0o">
-						<input type="hidden" name="ie" value="UTF-8">
-						<div class="input-group">
-							<input type="text" lang="en" id="searchText" name="q" class="gsc-input form-control" title="Search" x-webkit-speech="" x-webkit-grammar="builtin:search" dir="ltr" spellcheck="false" placeholder="Search...">
-							<span class="input-group-btn">
-								<input type="submit" id="sa" name="sa" class="btn btn-success" value="Go!">
-							</span>
-						</div>
-					</form>
-					<script type="text/javascript" src="//www.google.com/jsapi"></script>
-					<script type="text/javascript">
-						google.load('search', '1');
-						var autoCompletionOptions = {
-							'maxCompletions' : 5,
-							'styleOptions' : {
-								'xOffset' : 10
-						}};
-						google.setOnLoadCallback(function() {
-							google.search.CustomSearchControl.attachAutoCompletionWithOptions(
-								"008033887930820737546:0y0cr3nhd0o", document.getElementById('searchText'), 'searchForm', autoCompletionOptions);
-						});
-					</script>
+					<div class="navbar-right" id="gsearch">
+						<script>
+						(function() {
+							var cx = '008033887930820737546:0y0cr3nhd0o';
+							var gcse = document.createElement('script');
+							gcse.type = 'text/javascript';
+							gcse.async = true;
+							gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+							var s = document.getElementsByTagName('script')[0];
+							s.parentNode.insertBefore(gcse, s);
+						})();
+						</script>
+						<gcse:searchbox-only resultsUrl="https://www.barralinstitute.com/search-results.php">
+					</div>
 				</div><!--/.navbar-collapse -->
 			</div>
 		</nav>
