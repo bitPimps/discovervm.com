@@ -1,0 +1,3 @@
+User-agent: *
+
+Sitemap: https://discovervm.com/sitemap.xml
