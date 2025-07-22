@@ -1,0 +1,31 @@
+@use "colors";
+
+.text-pc {
+    color: colors.$primary-dark;
+}
+
+.text-sc {
+    color: colors.$secondary-dark;
+}
+
+.blockquote {
+    font-size: 0.95rem;
+    font-style: italic;
+    border-left: 4px solid colors.$primary-light;
+    padding-left: 1rem;
+    margin: 1rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: colors.$primary-dark;
+    text-wrap: balance;
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 2px colors.$black;
+}

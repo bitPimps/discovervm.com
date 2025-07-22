@@ -1,0 +1,28 @@
+@use "colors";
+
+.bg-pc-dark,
+.bg-hero {
+    background-color: colors.$primary-dark;
+}
+
+.bg-pc-light {
+    background-color: colors.$primary-light;
+}
+
+.bg-sc-dark {
+    background-color: colors.$secondary-dark;
+}
+
+.bg-sc-light {
+    background-color: colors.$secondary-light;
+}
+
+// Background images
+.bg-masthead {
+    background: colors.$primary-dark 50% 50% no-repeat padding-box;
+    background-size: cover;
+}
+
+.bg-home {
+    background-image: url('/images/backgrounds/home.jpg');
+}

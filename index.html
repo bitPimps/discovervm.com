@@ -1,34 +1,76 @@
-<?php
-require_once "inc/functions.php";
-require_once "inc/config.php";
-// Metadata
-$metatitle        = SITE_NAME;
-$metadescription  = "";
-$metaimage				= "https://discovervm.com/tile.png";
-?>
 <!doctype html>
 <html lang="en" class="h-100">
 <head>
-  <?php include_once "inc/meta-data.php"; ?>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net/">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5C2J4J7');</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-5CHHWRV');</script>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#603cba">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="/css/app.min.css" rel="stylesheet">
+  <meta name="description" content="Discover the benefits of Visceral Manipulation, a gentle manual therapy that targets internal organs to improve mobility, relieve pain, and support whole-body health. Learn how this hands-on approach can address digestive, musculoskeletal, and overall wellness concerns.">
+  <title>The Barral Institute</title>
   <link rel="canonical" href="https://discovervm.com">
 </head>
 <body class="d-flex flex-column h-100">
-  <?php include_once "inc/nav-main.php"; DrawNavMain("Home"); ?>
-  <header class="bg-masthead bg-home text-white">
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5C2J4J7 " height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5CHHWRV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <nav id="navmain" class="navbar navbar-expand-xl navbar-light fixed-top bg-pc-light border-bottom shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        <img class="img-fluid" src="/images/logos/bi.webp" alt="The Barral Institute">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto mb-2 mb-md-0 navbar-nav-scroll">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">
+              <i class="bi bi-house-fill fs-4" aria-hidden="true"></i>
+              <span class="visually-hidden">Home</span>
+            </a>
+          </li>
+        </ul>
+        <div class="d-flex ms-xl-5">
+          <a class="btn btn-pc" href="https://shop.iahe.com/Workshops/Barral-Institute" target="_blank" rel="noopener" role="button">Find a Class</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <header class="bg-hero bg-home text-white">
     <div class="container text-center">
-      <div class="masthead d-flex flex-column justify-content-center align-items-center">
+      <div class="hero d-flex flex-column justify-content-center align-items-center">
         <div class="mb-4">
-          <h1>Quality Continuing Education for the Manual Therapy Field since 1987</h1>
+          <h1 class="text-shadow text-white">Quality Continuing Education for the Manual Therapy Field since 1987</h1>
         </div>
         <div class="row justify-content-evenly w-50">
           <div class="col-lg-4 pb-3">
-            <a class="btn btn-pc" href="https://www.barralinstitute.com/therapies/courses.php" role="button">Our Courses</a>
+            <a class="btn btn-pc" href="https://www.barralinstitute.com/courses" role="button">Our Courses</a>
           </div>
           <div class="col-lg-4 pb-3">
-            <a class="btn btn-pc" href="http://shop.iahe.com/Product-List/Visceral-Manipulation-Products" target="_blank" rel="noopener" role="button">Our Products</a>
+            <a class="btn btn-pc" href="https://shop.iahe.com/Product-List/Visceral-Manipulation-Products" target="_blank" rel="noopener" role="button">Our Products</a>
           </div>
           <div class="col-lg-4 pb-3">
-            <a class="btn btn-pc" href="https://www.iahp.com/pages/search/index.php" target="_blank" rel="noopener" role="button">Find a Therapist</a>
+            <a class="btn btn-pc" href="https://www.iahp.com/pages/search/" target="_blank" rel="noopener" role="button">Find a Therapist</a>
           </div>
         </div>
       </div>
@@ -120,7 +162,7 @@ $metaimage				= "https://discovervm.com/tile.png";
                 <a class="anchor" id="HowVM"></a>
                 <h2 class="text-pc">How Did Visceral Manipulation Begin?</h2>
                 <p>Jean-Pierre Barral is an Osteopath and Registered Physical Therapist from France. He first became interested in the movement of the body (biomechanics) while working at the Lung Disease Hospital in Grenoble, France with Dr. Arnaud, a recognized specialist in lung diseases and a master of cadaver dissection. Barral was able to follow patterns of stress in the tissues of cadavers as he studied biomechanics in living subjects. This introduced him to the visceral system, its potential to promote lines of tension within the body, and the notion that tissues have memory. Barral's clinical work with the viscera led to his development of this form of manual therapy that focuses on the internal organs, their fascial environment and the potential influence on structural and physiological dysfunctions. The term he coined for this therapy was Visceral Manipulation.</p>
-                <p>Jean-Pierre Barral began teaching Visceral Manipulation in the United States in 1985. Since then he has trained a team of International Instructors that teach Visceral Manipulation seminars around the world. He has authored numerous textbooks for healthcare professionals, and has also authored a book for the general public, <a href="http://shop.iahe.com/s.nl/it.A/id.7/.f?sc=7&amp;category=538" target="_blank">Understanding the Messages of Your Body</a>, which discusses the important link between our organs and our emotions.</p>
+                <p>Jean-Pierre Barral began teaching Visceral Manipulation in the United States in 1985. Since then he has trained a team of International Instructors that teach Visceral Manipulation seminars around the world. He has authored numerous textbooks for healthcare professionals, and has also authored a book for the general public, <a href="https://shop.iahe.com/s.nl/it.A/id.7/.f?sc=7&amp;category=538" target="_blank">Understanding the Messages of Your Body</a>, which discusses the important link between our organs and our emotions.</p>
               </div>
               <div class="col-lg-4 offset-md-1">
                 <div class="list-group">
@@ -132,7 +174,7 @@ $metaimage				= "https://discovervm.com/tile.png";
                   <a href="#Organs" class="list-group-item list-group-item-info">How are Our Emotions Stored in the Organs?</a>
                   <a href="#HowVM" class="list-group-item list-group-item-info">How Did Visceral Manipulation Begin?</a>
                 </div>
-                <hr class="col-6 my-5">
+                <hr class="col-6 mx-auto my-5">
                 <div class="card">
                   <img class="card-img-top" src="https://698760.app.netsuite.com/core/media/media.nl?id=299&c=698760&h=880b0ad248ddef096728">
                   <div class="card-body">
@@ -143,12 +185,12 @@ $metaimage				= "https://discovervm.com/tile.png";
                     <p class="card-text">We are all born with certain parts of our bodies that are less healthy than others, and as the stresses and traumas of life accumulate, these areas become what Jean-Pierre Barral calls our bodies' &quot;weakest link.&quot; This is especially the case with our internal organs.</p>
 									  <p class="card-text">In this book, Barral discusses each organ and its complex relationship with the rest of the body, explaining how pain can originate with an emotional upset that creates distress in an organ, or how a physically damaged organ can cause emotional problems.</p>
                     <div class="d-grid gap-2">
-                      <a class="btn btn-sc" href="http://shop.iahe.com/Welcome/Understanding-the-Messages-of-Your-Body" target="_blank" rel="noopener" role="button">Purchase Products</a>
+                      <a class="btn btn-sc" href="https://shop.iahe.com/Welcome/Understanding-the-Messages-of-Your-Body" target="_blank" rel="noopener" role="button">Purchase Products</a>
                     </div>
                   </div>
                 </div>
-                <hr class="col-6 my-5">
-                <img class="img-fluid rounded-3" loading="lazy" src="https://www.barralinstitute.com/img/pages/home-2.jpg" alt="Discover Visceral Manipulation">
+                <hr class="col-6 mx-auto my-5">
+                <img class="img-fluid rounded-3" loading="lazy" src="/images/pages/home-2.jpg" alt="Discover Visceral Manipulation">
               </div>
             </div>
           </div>
@@ -162,10 +204,10 @@ $metaimage				= "https://discovervm.com/tile.png";
             <div class="row">
               <div class="col-lg-5 text-lg-end">
                 <h1 class="text-pc">The Barral Institute Around The World</h1>
-                <p>Access BI education wherever you are — from Argentina and Canada to the United Kingdom and Australia. BI offers classes worldwide through a collaboration with 51 International Affiliates. Through BI's international connections, our courses are available to tens of thousands of therapists each year who are helping to change lives, beginning with their own.</p>
+                <p>Access BI education wherever you are — from Argentina and Canada to the United Kingdom and Australia. BI offers classes worldwide through a collaboration with 60 International Affiliates. Through BI's international connections, our courses are available to tens of thousands of therapists each year who are helping to change lives, beginning with their own.</p>
               </div>
-              <div class="col-lg-5">
-                <img class="img-fluid rounded" loading="lazy" src="https://www.barralinstitute.com/img/pages/around-the-world.png" alt="The Barral Institute Around The World">
+              <div class="col-lg-5 offset-lg-1">
+                <img class="img-fluid rounded" loading="lazy" src="/images/pages/international-affiliates.png" alt="The Barral Institute Around The World">
               </div>
             </div>
           </div>
@@ -173,34 +215,27 @@ $metaimage				= "https://discovervm.com/tile.png";
         <div class="row mt-5 justify-content-center">
           <div class="col-lg-10 text-center">
             <h1 class="text-pc">The Barral Institute International Network</h1>
-            <p>The Barral Institute is a member of the International Alliance of Healthcare Educators (IAHE). This network of healthcare educational programs offers training in evidence-informed and evidence-based disciplines including Visceral Manipulation, Neural Manipulation, CranioSacral Therapy, SomatoEmotional Release, Total Body Balancing, Lymphatic Balancing, and many more. <strong>These integrative trainings foster the critical thinking skills necessary to make evidence-informed clinical decisions in order to help facilitate the best possible client outcomes.</strong></p>
+            <p>The Barral Institute is a member of the International Alliance of Healthcare Educators (IAHE). This network of healthcare educational programs offers training in evidence-informed and evidence-based disciplines including Visceral Manipulation, Neural Manipulation, Manual Approach to the Brain, CranioSacral Therapy, SomatoEmotional Release, and many more. <strong>These integrative trainings foster the critical thinking skills necessary to make evidence-informed clinical decisions in order to help facilitate the best possible client outcomes.</strong></p>
             <p>Alumni of IAHE courses become part of a global referral network, the International Association of Healthcare Practitioners (IAHP).</p>
             <div class="row row-cols-2 row-cols-md-4 justify-content-center">
               <div class="col mt-3">
                 <div class="card h-100 shadow-sm">
                   <a class="stretched-link my-auto" href="https://www.iahe.com" target="_blank" rel="noopener">
-                    <img class="card-img-top" loading="lazy" src="https://www.upledger.com/img/logos/iahe.png" alt="IAHE">
+                    <img class="card-img-top" loading="lazy" src="/images/logos/iahe.webp" alt="International Alliance of Healthcare Educators">
                   </a>
                 </div>
               </div>
               <div class="col mt-3">
                 <div class="card h-100 shadow-sm">
                   <a class="stretched-link my-auto" href="https://www.upledger.com" target="_blank" rel="noopener">
-                    <img class="card-img-top p-2" loading="lazy" src="https://www.upledger.com/img/logos/uii.png" alt="Upledger Institute International">
-                  </a>
-                </div>
-              </div>
-              <div class="col mt-3">
-                <div class="card h-100 shadow-sm">
-                  <a class="stretched-link my-auto" href="https://www.dambrogioinstitute.com" target="_blank" rel="noopener">
-                    <img class="card-img-top p-2" loading="lazy" src="https://www.upledger.com/img/logos/dai.jpg" alt="D'Ambrogio Institute">
+                    <img class="card-img-top p-2" loading="lazy" src="/images/logos/uii.webp" alt="Upledger Institute International">
                   </a>
                 </div>
               </div>
               <div class="col mt-3">
                 <div class="card h-100 shadow-sm">
                   <a class="stretched-link mt-auto" href="https://www.iahp.com" target="_blank" rel="noopener">
-                    <img class="card-img-top" loading="lazy" src="https://www.upledger.com/img/logos/iahp.png" alt="IAHP">
+                    <img class="card-img-top" loading="lazy" src="/images/logos/iahp.webp" alt="International Alliance of Healthcare Practitioners">
                   </a>
                 </div>
               </div>
@@ -210,6 +245,46 @@ $metaimage				= "https://discovervm.com/tile.png";
       </div>
     </div>
   </main>
-  <?php include_once "inc/footer.php"; ?>
+  <footer class="bg-pc-light footer mt-auto py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col copyright text-center">
+        <div class="mb-3">
+          Copyright &copy; <span id="copyright-year"></span> The Barral Institute | All rights reserved
+        </div>
+        <script>
+          document.getElementById('copyright-year').textContent = new Date().getFullYear();
+        </script>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"@id": "https://discovervm.com",
+		"name": "The Barral Institute",
+		"logo": "/images/logos/bi.webp",
+		"url": "https://discovervm.com",
+		"telephone": "+18665227725",
+		"faxNumber": "+15616224771",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "11211 Prosperity Farms Road, Suite D324",
+			"addressLocality": "Palm Beach Gardens",
+			"addressRegion": "FL",
+			"postalCode": "33410-3487",
+			"addressCountry": "US"
+		},
+		"sameAs": [
+			"https://www.facebook.com/BarralInstitute",
+			"https://www.instagram.com/barralinstitute/",
+			"https://twitter.com/BarralInstitute",
+			"https://www.youtube.com/user/barralinstitute"
+		]
+	}
+</script>
 </body>
 </html>

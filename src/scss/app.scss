@@ -1,0 +1,26 @@
+// Units
+$page-top: 6rem;
+
+@use "config/colors";
+@use "config/backgrounds";
+@use "config/typography";
+@use "modules/buttons";
+@use "modules/hero";
+@use "modules/navbar";
+
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+body {
+    padding-top: $page-top;
+}
+
+@media (min-width: 576px) {
+    body {
+        padding-top: $page-top;
+    }
+}
+
+/* Anchor link offset */
+:target {
+    scroll-margin-top: 8em;
+}

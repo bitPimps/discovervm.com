@@ -1,0 +1,21 @@
+{
+    "css.styleSheets": [
+        "/css/app.min.css",
+    ],
+    "editor.tabSize": 2,
+    "liveSassCompile.settings.autoprefix": false,
+    "liveSassCompile.settings.formats": [
+        {
+            // compress the css file
+            "format": "compressed",
+            // add .min.css as the extension
+            "extensionName": ".min.css",
+            // define the output/save path
+            "savePath": "/css"
+        }
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/node_modules/**",
+        "/.vscode/**"
+    ],
+}

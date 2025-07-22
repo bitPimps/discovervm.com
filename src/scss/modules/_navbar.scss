@@ -1,0 +1,44 @@
+@use "../config/colors";
+
+#navmain {
+    //height: 6rem;
+    font-weight: 600;
+
+    i.bi {
+        font-size: .875rem;
+    }
+
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        color: var(--bs-body-color);
+        background-color: colors.$primary-light;
+    }
+
+    .dropdown-item.active,
+    .dropdown-item:active {
+        color: colors.$white;
+        text-decoration: none;
+        background-color: colors.$primary-dark;
+    }
+
+    .navbar-brand img {
+        width: auto;
+        height: 75px;
+    }
+
+    .navbar-nav .nav-link {
+        color: colors.$primary-dark;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .show>.nav-link {
+        color: var(--bs-navbar-active-color);
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-expand-xl .navbar-nav .nav-link {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
