@@ -2,6 +2,8 @@
 
 Static marketing and education site for **The Barral Institute** — a continuing education organization for healthcare professionals specializing in Visceral Manipulation (VM) since 1987.
 
+Live site: [discovervm.com](https://discovervm.com) — hosted on GitHub Pages.
+
 ## Tech Stack
 
 | Layer | Technology |
@@ -10,8 +12,8 @@ Static marketing and education site for **The Barral Institute** — a continuin
 | CSS framework | [Bootstrap 5.3.7](https://getbootstrap.com/) via CDN |
 | Icons | [Bootstrap Icons 1.13.1](https://icons.getbootstrap.com/) via CDN |
 | Custom CSS | SCSS → compiled to `css/app.min.css` |
-| Server | IIS (Windows) — configured via `web.config` |
-| Analytics | Google Tag Manager (GTM-5C2J4J7, GTM-5CHHWRV) |
+| Hosting | GitHub Pages (custom domain) |
+| Analytics | Google Tag Manager |
 | Structured data | JSON-LD (Schema.org) |
 
 ## Project Structure
@@ -19,24 +21,23 @@ Static marketing and education site for **The Barral Institute** — a continuin
 ```
 discovervm.com/
 ├── index.html                  # Main page (all site content lives here)
+├── CNAME                       # GitHub Pages custom domain
 ├── sitemap.xml
 ├── robots.txt
-├── web.config                  # IIS server config (error handlers, security headers, caching)
 ├── site.webmanifest            # PWA manifest
 ├── css/
 │   └── app.min.css             # Compiled output — do not edit directly
 ├── src/
-│   ├── scss/                   # Source stylesheets
-│   │   ├── app.scss            # Entry point
-│   │   ├── config/
-│   │   │   ├── _colors.scss
-│   │   │   ├── _backgrounds.scss
-│   │   │   └── _typography.scss
-│   │   └── modules/
-│   │       ├── _buttons.scss
-│   │       ├── _navbar.scss
-│   │       └── _hero.scss
-│   └── error_docs/             # Custom IIS error pages (400–503)
+│   └── scss/                   # Source stylesheets
+│       ├── app.scss            # Entry point
+│       ├── config/
+│       │   ├── _colors.scss
+│       │   ├── _backgrounds.scss
+│       │   └── _typography.scss
+│       └── modules/
+│           ├── _buttons.scss
+│           ├── _navbar.scss
+│           └── _hero.scss
 └── images/
     ├── logos/                  # Organization logos (bi, iahe, iahp, uii)
     ├── backgrounds/
@@ -61,11 +62,9 @@ All page content is in `index.html`. The site is a single static HTML file — n
 
 ## Deployment
 
-The site runs on IIS. Deploy by copying changed files to the server root. Key server behaviours defined in `web.config`:
+The site is hosted on GitHub Pages from the `master` branch root. Pushing to `master` deploys automatically.
 
-- Custom error pages routed to `src/error_docs/`
-- Static asset cache: 364-day `max-age`
-- Security headers: CSP, `X-Frame-Options`, `X-Content-Type-Options`
+The custom domain `discovervm.com` is configured via the `CNAME` file in the repo root and DNS records pointing to GitHub Pages.
 
 ## Structured Data (Schema.org)
 
